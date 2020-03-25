@@ -1,0 +1,38 @@
+{
+	"credit": "Asc4Yin",
+	"textures": {
+		"0": "ambellicportals:ingame/fabricator_front",
+		"1": "ambellicportals:ingame/fabricator_side",
+		"2": "ambellicportals:ingame/fabricator_back",
+		"3": "ambellicportals:ingame/fabricator_top",
+		"4": "ambellicportals:ingame/fabricator_bottom",
+		"5": "ambellicportals:ingame/fabricator_laser_cut_side_top",
+		"particle": "ambellicportals:ingame/fabricator_front"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 10, 16],
+			"faces": {
+				"north": {"uv": [0, 6, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 6, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 6, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4"}
+			}
+		},
+		{
+			"from": [0, 10, 5],
+			"to": [16, 15, 11],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 6], "texture": "#0"},
+				"east": {"uv": [0, 11, 6, 16], "texture": "#5"},
+				"south": {"uv": [0, 1, 16, 6], "texture": "#0"},
+				"west": {"uv": [0, 11, 6, 16], "texture": "#5"},
+				"up": {"uv": [6, 0, 12, 16], "rotation": 90, "texture": "#5"},
+				"down": {"uv": [0, 0, 6, 16], "rotation": 270, "texture": "#missing"}
+			}
+		}
+	]
+}

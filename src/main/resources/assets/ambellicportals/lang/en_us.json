@@ -1,0 +1,23 @@
+{
+	"item.ambellicportals.moon_powder": "Moon Powder",
+
+
+	"block.ambellicportals.panel_single_lined": "Lined Single Panel",
+	"block.ambellicportals.panel_single_tile": "Tiled Single Panel",
+	"block.ambellicportals.panel_lined_top": "Lined Panel Top",
+	"block.ambellicportals.panel_lined_bottom": "Lined Panel Bottom",
+	"block.ambellicportals.panel_lined_corner_tl": "Lined Corner Panel (Top Left)",
+	"block.ambellicportals.panel_lined_corner_bl": "Lined Corner Panel (Bottom Left)",
+	"block.ambellicportals.panel_lined_corner_tr": "Lined Corner Panel (Top Right)",
+	"block.ambellicportals.panel_lined_corner_br": "Lined Corner Panel (Bottom Right)",
+
+	"block.ambellicportals.portable_single": "Single Portable Surface",
+	"block.ambellicportals.portable_single_nodips": "Single Portable Surface (No Dips)",
+	"block.ambellicportals.portable_single_flat": "Single Portable Surface (Flat)",
+	"block.ambellicportals.portable_top": "Portable Surface Top",
+	"block.ambellicportals.portable_bottom": "Portable Surface Bottom",
+	"block.ambellicportals.portable_nodips_top": "Portable Surface Top (No Dips)",
+	"block.ambellicportals.portable_nodips_bottom": "Portable Surface Bottom (No Dips)",
+	"block.ambellicportals.portable_flat_top": "Portable Surface Top (Flat)",
+	"block.ambellicportals.portable_flat_bottom": "Portable Surface Bottom (Flat)"
+}
