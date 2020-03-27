@@ -13,11 +13,11 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(AmbellicPortals.MOD_ID)
 public class iteminit
 {
-    public static final Item moon_powder = null;
+    public static final Item moon_rock = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("moon_powder"));
+        event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("moon_rock"));
     }
 }

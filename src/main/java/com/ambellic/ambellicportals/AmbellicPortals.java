@@ -1,16 +1,19 @@
 package com.ambellic.ambellicportals;
 
+import com.ambellic.ambellicportals.world.gen.PortalsOreGen;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod("ambellicportals")
+@Mod.EventBusSubscriber(modid = AmbellicPortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AmbellicPortals
 {
     private static final Logger LOGGER = LogManager.getLogger();
@@ -37,5 +40,9 @@ public class AmbellicPortals
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) { }
 
-
+    @SubscribeEvent
+    public static void loadCompleteEvent(FMLLoadCompleteEvent event)
+    {
+        PortalsOreGen.generateOre();
+    }
 }

@@ -2,7 +2,6 @@ package com.ambellic.ambellicportals.init;
 
 import com.ambellic.ambellicportals.AmbellicPortals;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -17,6 +16,12 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(modid = AmbellicPortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class blockinit
 {
+    public static final Block moon_shards_ore = null;
+    public static final Block magnesium_ore = null;
+    public static final Block copper_ore = null;
+
+    public static final Block fabricator = null;
+
     public static final Block panel_single_lined = null;
     public static final Block panel_single_tile = null;
     public static final Block panel_lined_top = null;
@@ -39,6 +44,10 @@ public class blockinit
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> event)
     {
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f, 1200f).sound(SoundType.STONE)).setRegistryName("moon_shards_ore"));
+
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 5f).sound(SoundType.ANVIL)).setRegistryName("fabricator"));
+
         event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2f, 6f).sound(SoundType.STONE)).setRegistryName("panel_single_lined"));
         event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2f, 6f).sound(SoundType.STONE)).setRegistryName("panel_single_tile"));
         event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2f, 6f).sound(SoundType.STONE)).setRegistryName("panel_lined_top"));
@@ -62,6 +71,9 @@ public class blockinit
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event)
     {
+        event.getRegistry().register(new BlockItem(moon_shards_ore, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("moon_shards_ore"));
+        event.getRegistry().register(new BlockItem(fabricator, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("fabricator"));
+
         event.getRegistry().register(new BlockItem(panel_single_lined, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("panel_single_lined"));
         event.getRegistry().register(new BlockItem(panel_single_tile, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("panel_single_tile"));
         event.getRegistry().register(new BlockItem(panel_lined_top, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("panel_lined_top"));

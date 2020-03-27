@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ambellicportals:moon_rock",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
