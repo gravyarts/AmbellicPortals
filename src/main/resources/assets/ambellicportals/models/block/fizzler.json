@@ -1,0 +1,60 @@
+{
+	"credit": "Asc4Yin",
+	"elements": [
+		{
+			"from": [0, 0, 6.5],
+			"to": [4, 16, 9.5],
+			"color": 0,
+			"faces": {
+				"north": {"uv": [0, 0, 4, 16], "texture": "#missing"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 4, 16], "texture": "#missing"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 3], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 3], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 0, 5.5],
+			"to": [3, 16, 5.5],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0.5, 16, 5.5]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 3, 16], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 3, 16], "texture": "#missing"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 3, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 0, 10.5],
+			"to": [3, 16, 10.5],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [0.5, 16, 10.5]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [2, 0, 5, 16], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [2, 0, 5, 16], "texture": "#missing"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 3, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 3, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [-0.5, 0, 5],
+			"to": [0.5, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 7.5]},
+			"color": 0,
+			"faces": {
+				"north": {"uv": [0, 0, 1, 16], "texture": "#missing"},
+				"east": {"uv": [0, 0, 6, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 1, 16], "texture": "#missing"},
+				"west": {"uv": [0, 0, 6, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 1, 6], "texture": "#missing"},
+				"down": {"uv": [0, 0, 1, 6], "texture": "#missing"}
+			}
+		}
+	]
+}
