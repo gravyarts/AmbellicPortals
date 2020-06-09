@@ -1,9 +1,6 @@
 package com.ambellic.ambellicportals.init;
 
 import com.ambellic.ambellicportals.AmbellicPortals;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;

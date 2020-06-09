@@ -1,13 +1,13 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"2": "ambellicportals:ingame/fabricator_front",
-		"3": "ambellicportals:ingame/fabricator_side",
-		"4": "ambellicportals:ingame/fabricator_back",
-		"5": "ambellicportals:ingame/fabricator_bottom",
-		"6": "ambellicportals:ingame/fabricator_laser_cut_side_top",
-		"7": "ambellicportals:ingame/fabricator_top",
-		"particle": "ambellicportals:ingame/fabricator_back"
+		"2": "ambellicportals:block/fabricator_front",
+		"3": "ambellicportals:block/fabricator_side",
+		"4": "ambellicportals:block/fabricator_back",
+		"5": "ambellicportals:block/fabricator_bottom",
+		"6": "ambellicportals:block/fabricator_laser_cut_side_top",
+		"7": "ambellicportals:block/fabricator_top",
+		"particle": "ambellicportals:block/fabricator_back"
 	},
 	"elements": [
 		{

@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "ambellicportals:portaltwo/panel_lined_top"
+        "all": "ambellicportals:portalblock/panel_lined_top"
     }
 }

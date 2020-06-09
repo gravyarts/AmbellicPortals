@@ -1,12 +1,12 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:energyball/backboard",
-		"1": "ambellicportals:energyball/base",
-		"2": "ambellicportals:energyball/pegs",
-		"3": "ambellicportals:energyball/launcher_ball",
-		"4": "ambellicportals:energyball/launcher_opener",
-		"particle": "ambellicportals:energyball/backboard"
+		"0": "ambellicportals:portalblock/backboard",
+		"1": "ambellicportals:portalblock/base",
+		"2": "ambellicportals:portalblock/pegs",
+		"3": "ambellicportals:portalblock/launcher_ball",
+		"4": "ambellicportals:portalblock/launcher_opener",
+		"particle": "ambellicportals:portalblock/backboard"
 	},
 	"elements": [
 		{

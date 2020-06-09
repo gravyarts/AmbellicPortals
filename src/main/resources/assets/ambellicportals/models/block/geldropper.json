@@ -1,13 +1,13 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:portaltwo/geldropper",
-		"1": "ambellicportals:portaltwo/geldropper_color",
-		"2": "ambellicportals:portaltwo/geldropper_bottom",
-		"3": "ambellicportals:portaltwo/geldropper_top",
-		"4": "ambellicportals:portaltwo/geldropper_color_cutout",
-		"5": "ambellicportals:portaltwo/geldropper_ring",
-		"particle": "ambellicportals:portaltwo/geldropper"
+		"0": "ambellicportals:portalblock/geldropper",
+		"1": "ambellicportals:portalblock/geldropper_color",
+		"2": "ambellicportals:portalblock/geldropper_bottom",
+		"3": "ambellicportals:portalblock/geldropper_top",
+		"4": "ambellicportals:portalblock/geldropper_color_cutout",
+		"5": "ambellicportals:portalblock/geldropper_ring",
+		"particle": "ambellicportals:portalblock/geldropper"
 	},
 	"elements": [
 		{

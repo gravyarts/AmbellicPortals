@@ -16,9 +16,8 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(modid = AmbellicPortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class blockinit
 {
-    public static final Block moon_shards_ore = null;
-    public static final Block magnesium_ore = null;
-    public static final Block copper_ore = null;
+    public static final Block meteorite_ore = null;
+    //public static final Block meteorite = null;
 
     public static final Block fabricator = null;
 
@@ -44,7 +43,8 @@ public class blockinit
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> event)
     {
-        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f, 1200f).sound(SoundType.STONE)).setRegistryName("moon_shards_ore"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f, 1200f).sound(SoundType.STONE)).setRegistryName("meteorite_ore"));
+        //event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f, 1200f).sound(SoundType.STONE)).setRegistryName("meteorite"));
 
         event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5f, 5f).sound(SoundType.ANVIL)).setRegistryName("fabricator"));
 
@@ -71,7 +71,8 @@ public class blockinit
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().register(new BlockItem(moon_shards_ore, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("moon_shards_ore"));
+        event.getRegistry().register(new BlockItem(meteorite_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("moon_shards_ore"));
+        //event.getRegistry().register(new BlockItem(meteorite, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("meteorite"));
         event.getRegistry().register(new BlockItem(fabricator, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("fabricator"));
 
         event.getRegistry().register(new BlockItem(panel_single_lined, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("panel_single_lined"));

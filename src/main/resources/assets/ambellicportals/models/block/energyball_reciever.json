@@ -1,11 +1,11 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:energyball/backboard",
-		"1": "ambellicportals:energyball/base",
-		"2": "ambellicportals:energyball/pegs",
-		"3": "ambellicportals:energyball/reciever_ball_closed",
-		"particle": "ambellicportals:energyball/backboard"
+		"0": "ambellicportals:portalblocks/backboard",
+		"1": "ambellicportals:portalblocks/base",
+		"2": "ambellicportals:portalblocks/pegs",
+		"3": "ambellicportals:portalblocks/reciever_ball_closed",
+		"particle": "ambellicportals:portalblocks/backboard"
 	},
 	"elements": [
 		{

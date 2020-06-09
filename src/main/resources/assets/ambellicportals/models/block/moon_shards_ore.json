@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "ambellicportals:ingame/moon_shards_ore"
-    }
-}

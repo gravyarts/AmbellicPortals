@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "ambellicportals:portaltwo/portable_flat_top"
+        "all": "ambellicportals:portalblock/portable_flat_top"
     }
 }

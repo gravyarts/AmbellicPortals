@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "ambellicportals:portaltwo/portable_nodips_top"
+        "all": "ambellicportals:portalblock/portable_nodips_top"
     }
 }
