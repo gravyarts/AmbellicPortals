@@ -14,7 +14,7 @@ import static com.ambellic.ambellicportals.AmbellicPortals.MOD_ID;
 @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class APItems {
 
-    /* Create Items DeferredRegistry for Registering AmbellicPortals Blocks */
+    /* Create Items DeferredRegistry for Registering AmbellicPortals Items */
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, AmbellicPortals.MOD_ID);
 
 
