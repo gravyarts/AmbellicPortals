@@ -1,6 +1,10 @@
 package com.ambellic.ambellicportals;
 
+import com.ambellic.ambellicportals.common.init.APBlocks;
+import com.ambellic.ambellicportals.common.init.APItems;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,13 +23,11 @@ public class AmbellicPortals
     public static AmbellicPortals instance;
 
     public AmbellicPortals()
-
     {
+        FMLJavaModLoadingContext.get().getModEventBus().register(this);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
         instance = this;
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -35,6 +37,9 @@ public class AmbellicPortals
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
 
-    @SubscribeEvent
-    public void onServerStarting(FMLServerStartingEvent event) { }
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void onNewRegistries(RegistryEvent.NewRegistry e) {
+        APBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        APItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
 }
