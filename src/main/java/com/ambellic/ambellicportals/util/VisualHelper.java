@@ -78,6 +78,8 @@ public class VisualHelper {
         }
     }
 
+
+
     public static class RenderTypes extends RenderType {
 
         public RenderTypes(String name, VertexFormat vertexFormat, int drawMode, int bufferSize, boolean useDelegate, boolean needsSorting, Runnable setupTask, Runnable clearTask) {
