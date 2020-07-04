@@ -34,7 +34,7 @@ public class TurretRenderer extends LivingRenderer<TurretEntity, SentryTurretMod
     public void render(TurretEntity entity, float entityYaw, float partialTicks, MatrixStack matrixStack, IRenderTypeBuffer bufferIn, int packedLightIn) {
 
         matrixStack.push();
-        matrixStack.scale(1.5F,1.5F,1.5F);
+        matrixStack.scale(1.175F,1.175F,1.175F);
         super.render(entity, entityYaw, partialTicks, matrixStack, bufferIn, packedLightIn);
         matrixStack.pop();
 
@@ -54,7 +54,7 @@ public class TurretRenderer extends LivingRenderer<TurretEntity, SentryTurretMod
         float yaw = (float) (Math.atan2(z_, x_) * 180.0D / 3.141592653589793D) - 90.0F;
         float pitch = (float) -(Math.atan2(y_, diff) * 180.0D / 3.141592653589793D);
 
-        matrixStack.translate(0,1,0);
+        matrixStack.translate(0,0.95,0);
 
         matrixStack.rotate(Vector3f.YP.rotation(-yaw));
         matrixStack.rotate(Vector3f.XP.rotation(pitch));
