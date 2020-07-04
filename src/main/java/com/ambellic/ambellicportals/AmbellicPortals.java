@@ -1,5 +1,6 @@
 package com.ambellic.ambellicportals;
 
+import com.ambellic.ambellicportals.client.models.ArmorModels;
 import com.ambellic.ambellicportals.client.renderers.entity.TurretRenderer;
 import com.ambellic.ambellicportals.common.init.*;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,6 +37,7 @@ public class AmbellicPortals {
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(APEntities.SENTRY_TURRET.get(), new TurretRenderer());
+        ArmorModels.init();
     }
 
 
