@@ -1,13 +1,14 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:portalone/radio_base",
-		"1": "ambellicportals:portalone/radio",
-		"2": "ambellicportals:portalone/radio_back",
-		"particle": "ambellicportals:portalone/radio_base"
+		"0": "ambellicportals:portalblock/radio_base",
+		"1": "ambellicportals:portalblock/radio",
+		"2": "ambellicportals:portalblock/radio_back",
+		"particle": "ambellicportals:portalblock/radio_base"
 	},
 	"elements": [
 		{
+			"name": "base",
 			"from": [2.5, 0, 5],
 			"to": [13.5, 1, 10],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.5, 8]},
@@ -21,18 +22,7 @@
 			}
 		},
 		{
-			"from": [3.5, 5.5, 6],
-			"to": [12.5, 6.5, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.5, 8]},
-			"faces": {
-				"north": {"uv": [0, 13, 9, 14], "texture": "#2"},
-				"east": {"uv": [3, 15, 6, 16], "texture": "#2"},
-				"south": {"uv": [0, 13, 9, 14], "texture": "#2"},
-				"west": {"uv": [0, 15, 3, 16], "texture": "#2"},
-				"up": {"uv": [0, 9, 9, 12], "texture": "#2"}
-			}
-		},
-		{
+			"name": "base",
 			"from": [3, 0.5, 5.5],
 			"to": [13, 5.5, 9.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.5, 8]},
@@ -45,6 +35,20 @@
 			}
 		},
 		{
+			"name": "roof",
+			"from": [3.5, 5.5, 6],
+			"to": [12.5, 6.5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 13, 9, 14], "texture": "#2"},
+				"east": {"uv": [3, 15, 6, 16], "texture": "#2"},
+				"south": {"uv": [0, 13, 9, 14], "texture": "#2"},
+				"west": {"uv": [0, 15, 3, 16], "texture": "#2"},
+				"up": {"uv": [0, 9, 9, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "bluearch",
 			"from": [2.75, 0.25, 5.25],
 			"to": [13.25, 5.75, 5.75],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3.5, 8]},
@@ -53,6 +57,7 @@
 			}
 		},
 		{
+			"name": "antenna",
 			"from": [10.85355, 6.5, 6.89645],
 			"to": [10.85355, 11.5, 7.39645],
 			"rotation": {"angle": -45, "axis": "y", "origin": [10.5, 9, 7.5]},
@@ -62,6 +67,7 @@
 			}
 		},
 		{
+			"name": "antenna",
 			"from": [10.60355, 6.5, 7.14645],
 			"to": [11.10355, 11.5, 7.14645],
 			"rotation": {"angle": -45, "axis": "y", "origin": [10.5, 9, 7.5]},
@@ -83,12 +89,10 @@
 			"scale": [0.375, 0.375, 0.375]
 		},
 		"firstperson_righthand": {
-			"rotation": [0, 45, 0],
 			"translation": [0, 3, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 225, 0],
 			"translation": [0, 3, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
@@ -108,5 +112,12 @@
 			"translation": [0, 3.5, 0],
 			"scale": [0.8, 0.8, 0.8]
 		}
-	}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
 }
