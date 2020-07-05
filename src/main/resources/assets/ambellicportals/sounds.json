@@ -1,0 +1,64 @@
+{
+  "turret_fire": {
+    "category": "ambient",
+    "subtitle": "ambellicportals.subtitles.turret_fire",
+    "sounds": [
+      {
+        "name": "ambellicportals:turret/fire/turret_fire_01",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/fire/turret_fire_02",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/fire/turret_fire_03",
+        "stream": false
+      }
+    ]
+  },
+  "turrent_found_target": {
+    "category": "ambient",
+    "subtitle": "ambellicportals.subtitles.target_found",
+    "sounds": [
+      {
+        "name": "ambellicportals:turret/target_found/target_found",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_firing",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_gotcha",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_hello",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_hello_friend",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_see_you",
+        "stream": false
+      },
+      {
+        "name": "ambellicportals:turret/target_found/target_found_there_you_are",
+        "stream": false
+      }
+    ]
+  },
+  "portal_radio": {
+    "category": "ambient",
+    "subtitle": "ambellicportals.subtitles.portal_radio",
+    "sounds": [
+      {
+        "name": "ambellicportals:misc/portal_radio",
+        "stream": false
+      }
+    ]
+  }
+}

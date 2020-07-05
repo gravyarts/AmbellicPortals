@@ -1,7 +1,7 @@
 package com.ambellic.ambellicportals.common.init;
 
-import com.ambellic.ambellicportals.AmbellicPortals;
 import com.ambellic.ambellicportals.common.blocks.APBaseBlock;
+import com.ambellic.ambellicportals.common.blocks.RadioBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.Collection;
 
 import static com.ambellic.ambellicportals.AmbellicPortals.MOD_ID;
-import static com.ambellic.ambellicportals.common.init.APGroups.AP_MAIN;
+import static com.ambellic.ambellicportals.common.init.APGroups.AP_BLOCKS;
 
 @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class APBlocks {
@@ -23,13 +23,6 @@ public class APBlocks {
     /* Create Blocks DeferredRegistry for Registering AmbellicPortals Blocks */
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MOD_ID);
 
-    /* This method is used to minimize the amount of lines needed to create ItemBlocks for every registered block */
-    public static void genBlockItems(Collection<RegistryObject<Block>> collection) {
-        for (RegistryObject<Block> block : collection) {
-           APItems.ITEMS.register(block.get().getRegistryName().getPath(), () -> APItems.setUpItem(new BlockItem(block.get(), new Item.Properties().group(AP_MAIN))));
-        }
-    }
-    
     /* All blocks will be registered below this comment */
 
     /* At the time of writing, a lot of blocks share the same properties, so I've just made a varible for thos properties to make the class look cleaner */
@@ -54,6 +47,20 @@ public class APBlocks {
     public static final RegistryObject<Block> PORTABLE_NODIPS_BOTTOM = BLOCKS.register("portable_nodips_bottom", () -> new APBaseBlock(oreProperties));
     public static final RegistryObject<Block> PORTABLE_FLAT_TOP = BLOCKS.register("portable_flat_top", () -> new APBaseBlock(oreProperties));
     public static final RegistryObject<Block> PORTABLE_FLAT_BOTTOM = BLOCKS.register("portable_flat_bottom", () -> new APBaseBlock(oreProperties));
-    
+    public static final RegistryObject<Block> PORTAL_RADIO = BLOCKS.register("portal_radio", () -> new RadioBlock(oreProperties));
+
+
+    /* This method is used to minimize the amount of lines needed to create ItemBlocks for every registered block */
+    public static void genBlockItems(Collection<RegistryObject<Block>> collection) {
+        for (RegistryObject<Block> block : collection) {
+            if (block.get() instanceof APBaseBlock) {
+                APBaseBlock apBlock = (APBaseBlock) block.get();
+                if (apBlock.hasItemBlock()) {
+                    APItems.ITEMS.register(block.get().getRegistryName().getPath(), () -> APItems.setUpItem(new BlockItem(block.get(), new Item.Properties().group(AP_BLOCKS))));
+                }
+            }
+        }
+    }
+
 
 }

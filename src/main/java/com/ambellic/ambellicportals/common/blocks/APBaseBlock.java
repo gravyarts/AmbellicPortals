@@ -6,4 +6,8 @@ public class APBaseBlock extends Block {
     public APBaseBlock(Properties properties) {
         super(properties);
     }
+
+    public boolean hasItemBlock(){
+        return true;
+    }
 }

@@ -3,7 +3,6 @@ package com.ambellic.ambellicportals.client.models;
 import com.ambellic.ambellicportals.common.init.APItems;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 
 import java.util.HashMap;
 
