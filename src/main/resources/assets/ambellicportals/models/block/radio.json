@@ -1,10 +1,10 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:block/radio_base",
-		"1": "ambellicportals:block/radio",
-		"2": "ambellicportals:block/radio_back",
-		"particle": "ambellicportals:block/radio_base"
+		"0": "ambellicportals:portalblock/radio_base",
+		"1": "ambellicportals:portalblock/radio",
+		"2": "ambellicportals:portalblock/radio_back",
+		"particle": "ambellicportals:portalblock/radio_base"
 	},
 	"elements": [
 		{

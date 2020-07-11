@@ -1,9 +1,8 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"1": "ambellicportals:portalblock/faithplate_frame_bottom",
-		"2": "ambellicportals:portalblock/faithplate",
-		"particle": "ambellicportals:portalblock/faithplate_frame_top"
+		"1": "ambellicportals:block/faithplate_frame_bottom",
+		"2": "ambellicportals:block/faithplate"
 	},
 	"elements": [
 		{

@@ -1,10 +1,10 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:portalblock/faithplate_frame_top",
-		"1": "ambellicportals:portalblock/faithplate_frame_bottom",
-		"2": "ambellicportals:portalblock/faithplate",
-		"particle": "ambellicportals:portalblock/faithplate_frame_top"
+		"0": "ambellicportals:block/faithplate_frame_top",
+		"1": "ambellicportals:block/faithplate_frame_bottom",
+		"2": "ambellicportals:block/faithplate",
+		"particle": "ambellicportals:block/faithplate_frame_top"
 	},
 	"elements": [
 		{
@@ -92,7 +92,7 @@
 			"rotation": {"angle": 0, "axis": "x", "origin": [3, -3.5, 23.5]},
 			"faces": {
 				"north": {"uv": [2.25, 0, 3.5, 1.25], "texture": "#missing"},
-				"south": {"uv": [3.25, 7, 4.5, 8.25], "texture": "#missing"},
+				"south": {"uv": [3.25, 7, 4.5, 8.25], "texture": "#2"},
 				"west": {"uv": [7.5, 13.5, 9.5, 15.5], "texture": "#2"},
 				"up": {"uv": [8.75, 1.25, 7.5, 0], "texture": "#missing"}
 			}

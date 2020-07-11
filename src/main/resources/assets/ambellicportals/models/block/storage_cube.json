@@ -1,9 +1,9 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "ambellicportals:portalblock/normal_cube_base",
-		"1": "ambellicportals:portalblock/normal_cube_corners",
-		"particle": "ambellicportals:portalblock/normal_cube_base"
+		"0": "ambellicportals:block/normal_cube_base",
+		"1": "ambellicportals:block/normal_cube_corners",
+		"particle": "ambellicportals:block/normal_cube_base"
 	},
 	"elements": [
 		{
